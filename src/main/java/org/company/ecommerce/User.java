@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package org.company.ecommerce;
 
-/**
- *
- * @author Admin
- */
 public class User {
     private String name;
     private String email;
@@ -58,11 +49,6 @@ public class User {
         return this.shoppingCart.getTotalPrice();
     }
     
-    /**
-     * 
-     * @param rule
-     * @return 
-     */
     public double getTotalPriceOfShoppingCartOnApplyRule(PromotionRule rule) {
         return this.shoppingCart.getPriceAfterApplyPromotionRule(rule);
     }
